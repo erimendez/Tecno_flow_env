@@ -1,0 +1,108 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+        <html>
+            <head>
+              <title>Formulario CRUD</title>
+            </head>
+            <body>
+              <h2>Crear Registro</h2>
+              <form id="crearForm">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="name" name="name" required><br>
+            
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="lastname" name="lastname" required><br>
+            
+                <label for="marca">Marca:</label>
+                <select id="brand" name="brand">
+                  <option value="celumoto">Celumoto</option>
+                  <option value="celusamsung">Celusamsung</option>
+                </select><br>
+            
+                <label for="estado">Estado:</label>
+                <input type="text" id="status" name="status" required><br>
+            
+                <label for="capacidad">Capacidad:</label>
+                <input type="text" id="capacity" name="capacity" required><br>
+            
+                <label for="color">Color:</label>
+                <input type="text" id="colour" name="colour" required><br>
+            
+                <label for="precio">Precio sugerido:</label>
+                <input type="text" id="price" name="price" required><br>
+            
+                <label for="imagen">Imagen:</label>
+                <input type="file" id="image" name="imagen"><br>
+            
+                <input type="submit" value="Crear">
+              </form>
+            
+              <h2>Leer Registro</h2>
+              <div id="registros"></div>
+              <button onclick="obtenerRegistros()">Obtener Registros</button>
+              
+
+              <h2>Actualizar Registro</h2>
+              <form id="actualizarForm">
+                <label for="id">ID:</label>
+                <input type="text" id="id" name="id" required><br>
+            
+                <label for="nuevo_nombre">Nuevo nombre:</label>
+                <input type="text" id="nuevo_nombre" name="nuevo_nombre"><br>
+            
+                <!-- Agrega los campos adicionales que deseas actualizar -->
+            
+                <input type="submit" value="Actualizar">
+              </form>
+            
+              <h2>Borrar Registro</h2>
+              <form id="borrarForm">
+                <label for="id_borrar">ID:</label>
+                <input type="text" id="id_borrar" name="id_borrar" required><br>
+            
+                <input type="submit" value="Borrar">
+              </form>
+            
+        
+
+     
+    </div>
+    <!-- <div class="subir">
+        <form class="image-upload-form">
+            <label for="image">Seleccionar imagen:</label>
+            <input type="file" id="image" name="image" accept="image/*" required>
+            
+            <button type="button" onclick="uploadImage()">Subir imagen</button>
+          </form>
+  
+    <form class="my-form">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="lastname">Apellido:</label>
+        <input type="text" id="lastname" name="lastname" required>
+        
+        <label for="product">Producto:</label>
+        <input type="text" id="product" name="product" required>
+        
+        <label for="state">Estado:</label>
+        <input type="text" id="state" name="state" required>
+        
+        <label for="capacity">Capacidad:</label>
+        <input type="text" id="capacity" name="capacity" required>
+        
+        <label for="color">Color:</label>
+        <input type="text" id="color" name="color" required>
+        
+        <label for="price">Precio:</label>
+        <input type="text" id="price" name="price" required>
+        
+        <button type="submit">Enviar</button>
+      </form>
+    </div> -->
+     
+      <script src="{% static '/js/form.js' %}"></script>
+ 
+{% endblock %}
