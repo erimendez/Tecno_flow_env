@@ -17,7 +17,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
-from .views import ProductosmotoPage, ProductossamsungPage, TecnoViewPage, ContactoPage, SucursalesPage, TabletsPage, CotizacionPage, GraciasPage, ImpresorasPage, MonitoresPage, NotePage, PregFrecPage, ProductosPage, PromocionesPage
+
+from .views import ProductosmotoPage, ListadosucursalesPage, ProductossamsungPage, TecnoViewPage, ContactoPage, SucursalesPage, TabletsPage, CotizacionPage, GraciasPage, ImpresorasPage, MonitoresPage, NotePage, PregFrecPage, ProductosPage, PromocionesPage
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -36,8 +38,10 @@ urlpatterns = [
     path("cotiza/", include("cotiza_app.urls")),
     path("productosmoto",ProductosmotoPage.as_view(), name = "productosmoto_page" ),
     path("productossamsung",ProductossamsungPage.as_view(), name = "productossamsung_page" ),
-    
+    path("listadoSucursales",ListadosucursalesPage.as_view(), name = "listadosucursales_page" ),
+   
 ]
+
 
 
 

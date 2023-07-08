@@ -26,7 +26,7 @@
 
     <br>
     <div id="listadoSucursales">
-      <a target="_blank"  class="button" href="./assets/pages/listadoSucursales.html">Ver listado</a>
+      <a target="_blank"  class="button" href="{% url 'listadosucursales_page'%}">Ver listado</a>
     </div>
 
     <br>
@@ -38,6 +38,6 @@
   
   <script src="{% static '/js/all.min.js' %}"></script>
   
-  <script src="{% static '/js/sucursales.js' %}"></script>
+<script src="{% static '/js/sucursales.js' %}"></script> 
 
   {% endblock %} 

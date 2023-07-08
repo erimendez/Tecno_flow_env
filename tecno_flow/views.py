@@ -1,4 +1,6 @@
 from django.views.generic import TemplateView
+import subprocess
+
 
 
 class TecnoViewPage(TemplateView):
@@ -8,6 +10,9 @@ class TecnoViewPage(TemplateView):
     }
 class ProductosmotoPage(TemplateView):
     template_name = "Bloque/productosmoto.html"
+
+class ListadosucursalesPage(TemplateView):
+    template_name = "Bloque/listadoSucursales.html"
 
 class ProductossamsungPage(TemplateView):
     template_name = "Bloque/productossamsung.html"

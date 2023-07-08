@@ -35,8 +35,11 @@ APPS = [
 ]
 
 EXTERNALS = [
-    "rest_framework"
+    "rest_framework",
+
 ]
+
+
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -88,6 +91,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
+        
     }
 }
 
