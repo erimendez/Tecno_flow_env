@@ -6,6 +6,11 @@ class TecnoViewPage(TemplateView):
     extra_content = {
         'titulo_pagina' : "Inicio"
     }
+class ProductosmotoPage(TemplateView):
+    template_name = "Bloque/productosmoto.html"
+
+class ProductossamsungPage(TemplateView):
+    template_name = "Bloque/productossamsung.html"
 
 class ContactoPage(TemplateView):
     template_name = "Bloque/contacto.html"

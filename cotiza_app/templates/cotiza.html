@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<main>
+    <div class="container">
+    <div class="cotiza_celu">
+        <h1>Todas Las Reparaciones</h1>
+        <h2><a href="{% url 'cotiza:create' %}">Crear Cotizacion de Reparacion</a></h2>
+        {% for cotizacion in cotizacion_list %}
+            <div class="list">
+                <span>
+                    <p>{{ forloop.counter }}</p>
+                </span>
+                <span>
+                    <p>{{ cotizacion.marca }}</p>
+                    <p>{{ cotizacion.modelo }}</p>
+                    <p>{{ cotizacion.descrip_falla }}</p>
+                    <p>{{ cotizacion.fecha }}</p>
+    
+                </span>
+                <span>
+                    <label for="">Detalle: </label>
+                    <a href="{% url 'cotiza:detail' cotizacion.id %}">+</a>
+                </span>
+                <span>
+                <label for="">Editar: </label>
+                <a href="{% url 'cotiza:update' cotizacion.id %}">+</a>
+            </span>
+            <span>
+                <label for="">Borrar: </label>
+                <a href="{% url 'cotiza:delete' cotizacion.id %}">+</a>
+            </span>
+        </div>
+
+        {% endfor %}
+    </div>
+</div>
+</main>
+
+{% endblock %}

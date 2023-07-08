@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/4.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.2/ref/settings/
 """
-
+import os
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -30,6 +30,14 @@ ALLOWED_HOSTS = []
 
 # Application definition
 
+APPS = [
+    "cotiza_app"
+]
+
+EXTERNALS = [
+    "rest_framework"
+]
+
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -38,6 +46,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 ]
+
+INSTALLED_APPS += APPS
+INSTALLED_APPS += EXTERNALS
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

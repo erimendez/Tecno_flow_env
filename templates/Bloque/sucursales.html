@@ -1,26 +1,7 @@
-<!DOCTYPE html>
-<html lang="es">
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}  
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link rel="shortcut icon" href="assets/media/img/logonuevo3.png">
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css" />
-  <link rel="stylesheet" href="./assets/css/style.css">
-  <link rel="stylesheet" href="./assets/css/sucursales.css">
- 
-  <script async src="./assets/js/nav_footer.js"></script>
-</head>
-
-<title>Tecno Flow</title>
-
-<body>
-
-  <div class="contenedorheader">
-    <header class="header">
-    </header>
   </div>
   <main>
     <h1 class="titulo">Sucursales</h1>
@@ -53,17 +34,10 @@
 
   </main>
 
-  <footer class="footer"></footer>
-  
-  <!-- fontawesome -->
-  <script src="./assets/js/all.min.js"></script>
-  <!-- mapa -->
-  <script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
-  
-  <script src="./assets/js/sucursales.js"></script>
-  <script src="./assets/js/nav_footer.js"></script>
- 
-  
-</body>
 
-</html>
+  
+  <script src="{% static '/js/all.min.js' %}"></script>
+  
+  <script src="{% static '/js/sucursales.js' %}"></script>
+
+  {% endblock %} 

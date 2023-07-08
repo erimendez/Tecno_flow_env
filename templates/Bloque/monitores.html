@@ -1,29 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="shortcut icon" href="assets/media/img/logonuevo3.png">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital@1&family=Roboto&display=swap" rel="stylesheet">
-    <script async src="./assets/js/nav_footer.js"></script>
-    <link rel="stylesheet" href="./assets/css/productos.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    
-    <script src="https://kit.fontawesome.com/d9e9994d5f.js" crossorigin="anonymous"></script>
-    <title>Monitores</title>
-<body>
-   
-        <header class="header"></header>
-        </div>
-        <div class="container">
+{% extends 'base.html' %}
+{% load static %}
+{% block content %} 
+<div class="container">     
         <article>
             <div class = "containerflex">
                 <div class="imagenproducto">
-                <img src="./assets/media/img/monitor1.jpg" alt="" srcset="aca foto de un monitor">
+                  <img src="{% static '/media/img/monitor1.jpg' %}" alt="" srcset="aca foto de un monitor">
             </div>  
             <div class="descripcion_1">
                 <div class="iconosflex">
@@ -34,7 +16,7 @@
                 <span><i class="fa-solid fa-rotate-right fa-xl" style="color: #00a650;"></i></span>
                 <span class="precio-envio">Devolucion gratis en la primera compra</span></div>
                 <br>
-                <span><a href="./gracias.html">Compra aqui!</a></span>
+                <span><a href="{% url 'gracias_page' %}">Compra aqui!</a></span>
                 </div> </div>
                 <div class = "container2">
                 <div class="descripcion_1">
@@ -52,7 +34,7 @@
     <article>
             <div class = "containerflex">
                 <div class="imagenproducto">   
-                <img src="./assets/media/img/monitor2.png" alt="" srcset="aca foto de un monitor"></div>
+                <img src="{% static '/media/img/monitor2.png' %}" alt="" srcset="aca foto de un monitor"></div>
                 <div class="descripcion_1">
                     <div class="iconosflex">
                     <span><i class="fa-solid fa-truck-fast fa-flip-horizontal fa-xl" style="color: #00a650;"></i></span>
@@ -62,7 +44,7 @@
                     <span><i class="fa-solid fa-rotate-right fa-xl" style="color: #00a650;"></i></span>
                     <span class="precio-envio">Devolucion gratis en la primera compra</span></div>
                     <br>
-                    <span><a href="./gracias.html">Compra aqui!</a></span>
+                    <span><a href="{% url 'gracias_page' %}">Compra aqui!</a></span>
                     </div> </div>
                     <div class = "container2">
                     <div class="descripcion_1">
@@ -86,9 +68,4 @@
 
     </div>
 
-    <footer class="footer"></footer>
-    
-    <script src="./assets/js/nav_footer.js"></script>
-
-</body>
-</html>
+  {% endblock %}    

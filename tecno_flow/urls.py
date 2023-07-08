@@ -15,14 +15,14 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
 
-from .views import TecnoViewPage, ContactoPage, SucursalesPage, TabletsPage, CotizacionPage, GraciasPage, ImpresorasPage, MonitoresPage, NotePage, PregFrecPage, ProductosPage, PromocionesPage
+from .views import ProductosmotoPage, ProductossamsungPage, TecnoViewPage, ContactoPage, SucursalesPage, TabletsPage, CotizacionPage, GraciasPage, ImpresorasPage, MonitoresPage, NotePage, PregFrecPage, ProductosPage, PromocionesPage
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("",TecnoViewPage.as_view(), name = "landing_page"),
-    path("templates/Bloque/contacto",ContactoPage.as_view(), name = "contacto_page" ),
+    path("contacto",ContactoPage.as_view(), name = "contacto_page" ),
     path("sucursales",SucursalesPage.as_view(), name = "sucursales_page" ),
     path("tablets",TabletsPage.as_view(), name = "tablets_page" ),
     path("cotizacion",CotizacionPage.as_view(), name = "cotizacion_page" ),
@@ -33,8 +33,10 @@ urlpatterns = [
     path("productos",ProductosPage.as_view(), name = "productos_page" ),
     path("promociones",PromocionesPage.as_view(), name = "promociones_page" ),
     path("note",NotePage.as_view(), name = "note_page" ),
-
-
+    path("cotiza/", include("cotiza_app.urls")),
+    path("productosmoto",ProductosmotoPage.as_view(), name = "productosmoto_page" ),
+    path("productossamsung",ProductossamsungPage.as_view(), name = "productossamsung_page" ),
+    
 ]
 
 

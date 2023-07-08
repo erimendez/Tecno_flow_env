@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<main>
+    <div class="container">
+    <div class="cotiza_celu">
+        <h1>Estas seguro ue deseas borrar esta reparacion?</h1>
+        <h2>{{cotizacion.marca}}</h2>
+        <h2>{{cotizacion.modelo}}</h2>
+        <h2>{{cotizacion.descrip_falla}}</h2>
+        <h2>{{cotizacion.fecha}}</h2>
+        <form method="post">
+            {% csrf_token %}
+            <div>{{form.as_p}}</div>
+            <input type="submit" value="{{ tipo }}" />
+        </form>
+
+        <a href="{% url 'cotiza:all' %}">Cancelar</a>
+    </div>
+   </div>
+</main>
+
+
+
+
+{% endblock %}

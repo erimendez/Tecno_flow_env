@@ -1,54 +1,4 @@
-/* 
-* { box-sizing: border-box; }
 
-body{
-    margin: 0;
-    padding: 0;
-}
-
-.container{
-    
-    width: 100%;
-    height: 80%;
-    
-    
-    
-}
-article .containerflex h1{
-
-    margin: 10px;
-}
-
-article .containerflex strong{
-
-    margin: 10px;
-}
-.containerflex{
-    display: flex;
-   
-    justify-content: space-around;
-    text-align: left;
-    align-items: center;
-    margin: 30px;
-    flex-wrap: wrap;
-}
- h1{
-    text-align: center;
- }
-.container .celusg img{
-    width: 25%;
-    height: 25%;
-    text-align: center;
-    font-size: 25px;
-}
-
-.container .celumoto img{
-    width: 25%;
-    height: 25%;
-    text-align: center;
-    font-size: 25px;
-}
- */
  * { box-sizing: border-box; }
  body{
      margin: 0;
@@ -277,51 +227,6 @@ article .containerflex strong{
 
 
 
-
- 
-.container #sgs22{
-    display: none;
-  
-}
-.container #sga13{
-    display: none; 
-}
-
-.container #sga33{
-    display: none;  
-}
-
-.container #sga23{
-    display: none;  
-}
-
-.container #sgs20{
-    display: none;  
-}
-
-.container #me32{
-    display: none;  
-}
-
-
-.container #me13{
-    display: none;  
-}
-
-.container #mg9{
-    display: none;  
-}
-
-.container #mg32{
-    display: none;  
-}
-
-.container #mg42{
-    display: none;  
-}
-.container #me22{
-    display: none;  
-}
 
 
 /*Para todas las imagenes de los productos que no son celulares*/
