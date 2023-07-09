@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-bp1wxy=*!ro@d@$y#zr7!u)ysbi76#$6xu1^ii3eg$k!e)g+sn'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = false
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["ericamendez.pythonanywhere"]
 
 
 # Application definition
@@ -87,13 +87,40 @@ WSGI_APPLICATION = 'tecno_flow.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
+#DATABASES = {
+#   'default': {
+#       'ENGINE': 'django.db.backends.sqlite3',
+#      'NAME': BASE_DIR / 'db.sqlite3',
+#        
+#    }
+#}
+
+USUARIO_PYTHON_ANYWHERE    = "ericamendez"
+PASSWORD_MYSQL             = "lalala12345"
+MYSQL_PYTHON_ANYWHERE_HOST = USUARIO_PYTHON_ANYWHERE + ".mysql.pythonanywhere-services.com"
+MYSQL_DATABASE             = USUARIO_PYTHON_ANYWHERE + "$tecnoflow"
+
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-        
+                'ENGINE': 'django.db.backends.mysql',
+                'NAME': MYSQL_DATABASE,
+                'USER': USUARIO_PYTHON_ANYWHERE,
+                'PASSWORD': PASSWORD_MYSQL,
+                'HOST': MYSQL_PYTHON_ANYWHERE_HOST,
+                'PORT': '3306',
+            }
     }
-}
+
+
+
+
+
+
+
+
+
+
 
 
 # Password validation
