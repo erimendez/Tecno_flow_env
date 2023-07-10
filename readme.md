@@ -108,6 +108,12 @@ Cuenta con varias paginas con diversos productos (celulares, notebooks, tablets,
 - *base.html*: Página base.
 - *index.html*: Página de inicio del sitio web.
 
+#Carpeta tecno_flow
+-*Carpeta que contiene las vistas( views.py), las urls(urls.py) y las configuraciones globales (settings.py)
+
+#Carpeta cotiza_app
+-*Carpeta que contiene lo
+
 #Carpeta templates/Bloque
 
 - *index.html*: Página de inicio del sitio web.
@@ -131,49 +137,6 @@ Cuenta con varias paginas con diversos productos (celulares, notebooks, tablets,
 - *js/*: Carpeta que contiene los archivos javascript/jason del sitio web.
 
 - *media*: Carpeta que contiene archivos visuales para el sitio web.
-
-## Archivo `index.html`
-Este archivo contiene la pagina de inicio del sitio web, donde los usuario(clientes) pueden comprar y visualizar los productos tecnologicos a la venta. Ademas de promociones y ofertas.
-
-## Archivo `base.html`
-Este archivo contiene la base o plantilla que emplea las bibliotecas estáticas de JavaScript, Bootstrap.
-
-## Archivo `preg_Frec.html`
-Este archivo contiene las repuestas a las preguntas frecuentes hechas por los clientes en el momento de la compra o postventa; ademas de las gtias de los productos.
-
-## Archivo `contacto.html`
-Este archivo contiene el formulario de contacto que el usuario(cliente)puede completar para elevar un comentario/sugerencia o reclamo.
-
-## Archivo `gracias.html`
-Este archivo contiene un texto de agradecimiento por la compra.
-
-## Archivo `impresoras.html`
-Este archivo contiene infomacion sobre las impresoras en venta, ademas de sus descripciones y sus valores comerciales correspondientes.
-
-## Archivo `monitores.html`
-Este archivo contiene infomacion sobre los monitores en venta, ademas de sus descripciones y sus valores comerciales correspondientes.
-
-## Archivo `note.html`
-Este archivo contiene infomacion sobre las notebooks en venta, ademas de sus descripciones y sus valores comerciales correspondiente.
-
-## Archivo `productossamguns.html`
-Este archivo contiene infomacion sobre los celulares en venta de la marca "samsung ", ademas de sus descripciones y sus valores comerciales correspondiente.
-
-## Archivo `productosmoto.html`
-Este archivo contiene infomacion sobre los celulares en venta de la marca "Motorola", ademas de sus descripciones y sus valores comerciales correspondiente.
-
-## Archivo `sucursales.html`
-Este archivo contiene informacion y ubicacion fisica de las sucursales de la empresa en cuestion.
-
-## Archivo `tablets.html`
-Este archivo contiene infomacion sobre las tablets en venta, ademas de sus descripciones y sus valores comerciales 
-correspondiente.
-
-## Archivo `promociones.html`
-Este archivo contiene infomacion sobre las promociones vigentes en los medios de pagos correspondientes.
-
-## Archivo `cotización.html`
-Este archivo contiene un CRUD sobre las reparaciones solicitadas.
 
 ## Carpeta Css
 - *style.css*: Contiene los estilos generales del sitio web.
