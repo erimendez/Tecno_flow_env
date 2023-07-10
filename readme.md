@@ -97,7 +97,11 @@ Cuenta con varias paginas con diversos productos (celulares, notebooks, tablets,
 ## Estructura del proyecto
 
 #Tecno_flow_env
--
+-*manage.py: se usa para crear aplicaciones, trabajar con bases de datos y empezar el desarrollo del servidor web.
+-*requirements.tx: Archivo que ermite automatizar la instalación de paquetes.
+-*db.sqlite3: Base se datos antes usada antes de la emigracion a Mysql en pythonanywhere.
+
+
 #Carpeta templates
 - *Bloque/*: Carpeta que contiene paginas html anexas del sitio web.
 - *base.html*: Página base.
@@ -119,7 +123,7 @@ Cuenta con varias paginas con diversos productos (celulares, notebooks, tablets,
 - *productossamsung.hmtl*: Página del producto celular.
 - *productosmoto.hmtl*: Página del producto celular.
 
-#Carpeta static/*: contiene los arhivos
+#Carpeta static/*: contiene los archivos
 
 - *css/*: Carpeta que contiene los estilos del sitio web.
 
