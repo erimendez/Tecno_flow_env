@@ -19,9 +19,13 @@ Cuenta con varias paginas con diversos productos (celulares, notebooks, tablets,
 
 #Tecno_flow_env
 -
+#Carpeta templates
 
+-*Carpeta Bloque
+- *base.html*: Página base.
+- *index.html*: Página de inicio del sitio web.
 
-#Carpeta Templates/Bloque
+#Carpeta templates/Bloque
 
 - *index.html*: Página de inicio del sitio web.
 - *preg_Frec.html*: Página de las preguntas frecuentes.
@@ -37,12 +41,7 @@ Cuenta con varias paginas con diversos productos (celulares, notebooks, tablets,
 - *productossamsung.hmtl*: Página del producto celular.
 - *productosmoto.hmtl*: Página del producto celular.
 
-#Carpeta Templates
-
-- *base.html*: Página base.
-- *index.html*: Página de inicio del sitio web.
-
-
+#Carpeta static/*: contiene los arhivoc
 
 - *css/*: Carpeta que contiene los estilos del sitio web.
 
