@@ -17,7 +17,11 @@ Cuenta con varias paginas con diversos productos (celulares, notebooks, tablets,
 
 ## Estructura del proyecto
 
-#Carpeta Templates
+#Tecno_flow_env
+-
+
+
+#Carpeta Templates/Bloque
 
 - *index.html*: Página de inicio del sitio web.
 - *preg_Frec.html*: Página de las preguntas frecuentes.
@@ -29,9 +33,16 @@ Cuenta con varias paginas con diversos productos (celulares, notebooks, tablets,
 - *sucursales.html*: Página de las sucursales del fisicas.
 - *tablets.html*: Página del producto tablet.
 - *promociones.html*: Página de medios de pago.
-- *cotización.hmtl*: Páginade cotización de reparaciones.
-- *productossamsung.hmtl*: Páginade cotización de reparaciones.
-- *productosmoto.hmtl*: Páginade cotización de reparaciones.
+- *cotización.hmtl*: Página de cotización de reparaciones.
+- *productossamsung.hmtl*: Página del producto celular.
+- *productosmoto.hmtl*: Página del producto celular.
+
+#Carpeta Templates
+
+- *base.html*: Página base.
+- *index.html*: Página de inicio del sitio web.
+
+
 
 - *css/*: Carpeta que contiene los estilos del sitio web.
 
@@ -44,6 +55,9 @@ Cuenta con varias paginas con diversos productos (celulares, notebooks, tablets,
 
 ## Archivo `index.html`
 Este archivo contiene la pagina de inicio del sitio web, donde los usuario(clientes) pueden comprar y visualizar los productos tecnologicos a la venta. Ademas de promociones y ofertas.
+
+## Archivo `base.html`
+Este archivo contiene la base o plantilla que emplea las bibliotecas estáticas de JavaScript, Bootstrap.
 
 ## Archivo `preg_Frec.html`
 Este archivo contiene las repuestas a las preguntas frecuentes hechas por los clientes en el momento de la compra o postventa; ademas de las gtias de los productos.
