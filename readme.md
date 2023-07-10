@@ -16,6 +16,9 @@ Tecno Flow es un sitio dedicado a la venta de productos tecnologicos tanto para 
 Cuenta con varias paginas con diversos productos (celulares, notebooks, tablets, monitores e impresoras) y sus descripciones, ademas de un formulario de consulta.
 
 ## Estructura del proyecto
+
+#Carpeta Templates
+
 - *index.html*: Página de inicio del sitio web.
 - *preg_Frec.html*: Página de las preguntas frecuentes.
 - *contacto.html*: Página de contacto con el cliente.
@@ -23,11 +26,12 @@ Cuenta con varias paginas con diversos productos (celulares, notebooks, tablets,
 - *impresoras.html*: Página del producto impresora.
 - *monitores.html*: Página del producto monitor.
 - *note.html*: Página del producto notebook.
-- *productos.html*: Página del producto celular.
 - *sucursales.html*: Página de las sucursales del fisicas.
 - *tablets.html*: Página del producto tablet.
 - *promociones.html*: Página de medios de pago.
 - *cotización.hmtl*: Páginade cotización de reparaciones.
+- *productossamsung.hmtl*: Páginade cotización de reparaciones.
+- *productosmoto.hmtl*: Páginade cotización de reparaciones.
 
 - *css/*: Carpeta que contiene los estilos del sitio web.
 
@@ -59,8 +63,11 @@ Este archivo contiene infomacion sobre los monitores en venta, ademas de sus des
 ## Archivo `note.html`
 Este archivo contiene infomacion sobre las notebooks en venta, ademas de sus descripciones y sus valores comerciales correspondiente.
 
-## Archivo `productos.html`
-Este archivo contiene infomacion sobre los celulares en venta, ademas de sus descripciones y sus valores comerciales correspondiente.
+## Archivo `productossamguns.html`
+Este archivo contiene infomacion sobre los celulares en venta de la marca "samsung ", ademas de sus descripciones y sus valores comerciales correspondiente.
+
+## Archivo `productosmoto.html`
+Este archivo contiene infomacion sobre los celulares en venta de la marca "Motorola", ademas de sus descripciones y sus valores comerciales correspondiente.
 
 ## Archivo `sucursales.html`
 Este archivo contiene informacion y ubicacion fisica de las sucursales de la empresa en cuestion.
