@@ -1,4 +1,6 @@
 # Documentacion del Sitio Web "Tecno Flow" #
+![image](https://github.com/erimendez/Tecno_flow_env/assets/129424045/e14601ea-6e7d-4521-b38e-402c76ace45e)
+
 
 ## Integracion del Proyecto Inicial a Django y su deploy en Pythonanywhere
 ![image](https://github.com/erimendez/Tecno_flow_env/assets/129424045/c52c94ba-8341-480e-83cd-5209f218402e)
