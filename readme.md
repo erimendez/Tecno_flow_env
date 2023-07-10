@@ -6,7 +6,7 @@
 ## Requerimientos:
 
 ### Utilizar la implementación de django views para generar las rutas y colocar los endpoints necesarios para que internamente reconozca los paths  que el proyecto requiere.
-##En este punto se generaron las views, las URLs respectivas y los endpoints.
+## En este punto se generaron las views, las URLs respectivas y los endpoints.
 
 #### views.py
 ![image](https://github.com/erimendez/Tecno_flow_env/assets/129424045/34b63c1c-04af-485d-ba1f-dd127dcbff43)
