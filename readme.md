@@ -54,7 +54,8 @@
 
 ### Se agregó la página `cotización.html` donde se hizo un CRUD de reparación de celulares.
 
-![image](https://github.com/erimendez/Tecno_flow_env/assets/129424045/61dd2824-7ab4-48b4-b4af-abb8a3fa445d)
+![image](https://github.com/erimendez/Tecno_flow_env/assets/129424045/ec3990a5-8e81-483b-ab32-a6005df74c75)
+
 
 
 
