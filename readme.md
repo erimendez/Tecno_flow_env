@@ -6,7 +6,7 @@
 ## Requerimientos:
 
 ### Utilizar la implementación de django views para generar las rutas y colocar los endpoints necesarios para que internamente reconozca los paths  que el proyecto requiere.
--*En este punto se generaron las views, las URLs respectivas y los endpoints.
+##En este punto se generaron las views, las URLs respectivas y los endpoints.
 
 #### views.py
 ![image](https://github.com/erimendez/Tecno_flow_env/assets/129424045/34b63c1c-04af-485d-ba1f-dd127dcbff43)
@@ -16,7 +16,7 @@
 ![image](https://github.com/erimendez/Tecno_flow_env/assets/129424045/daa86c8a-0814-4aff-888c-fcd49bdd90ed)
   
 ### Levantar los archivos estáticos que se necesitaron para la parte funcional y estética del proyecto.
--*En la carpeta "static" justamente se colocaron todos las archivos estáticos (estilos CSS, scripts JS e imagenes MEDIA), se logró la funcionalidad completa acompañada de su respectiva estética.
+##En la carpeta "static" justamente se colocaron todos las archivos estáticos (estilos CSS, scripts JS e imagenes MEDIA), se logró la funcionalidad completa acompañada de su respectiva estética.
 
 #### static
 ![image](https://github.com/erimendez/Tecno_flow_env/assets/129424045/5e940db4-8712-42e7-92dc-0d3ddf82035e)
@@ -42,7 +42,7 @@
 "{% static '/js/script.js' %}"
 ```
 
-##Opcional-Recomendado: Generar un CRUD con los apps de django, e integrarlo con el front de django.
+## Opcional-Recomendado: Generar un CRUD con los apps de django, e integrarlo con el front de django.
 ### Se creo las paginas para el CRUD
 ![image](https://github.com/erimendez/Tecno_flow_env/assets/129424045/26eb5459-6ec8-4a71-8017-c2a75550104d)
 ### Urls
