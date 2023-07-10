@@ -97,8 +97,7 @@ Cuenta con varias paginas con diversos productos (celulares, notebooks, tablets,
 #Tecno_flow_env
 -
 #Carpeta templates
-
--*Carpeta Bloque
+- *Bloque/*: Carpeta que contiene paginas html anexas del sitio web.
 - *base.html*: Página base.
 - *index.html*: Página de inicio del sitio web.
 
@@ -124,10 +123,7 @@ Cuenta con varias paginas con diversos productos (celulares, notebooks, tablets,
 
 - *js/*: Carpeta que contiene los archivos javascript/jason del sitio web.
 
-- *Bloque/*: Carpeta que contiene paginas html anexas del sitio web.
-
 - *media*: Carpeta que contiene archivos visuales para el sitio web.
-
 
 ## Archivo `index.html`
 Este archivo contiene la pagina de inicio del sitio web, donde los usuario(clientes) pueden comprar y visualizar los productos tecnologicos a la venta. Ademas de promociones y ofertas.
