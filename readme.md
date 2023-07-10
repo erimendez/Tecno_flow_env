@@ -21,23 +21,23 @@
 #### static
 ![image](https://github.com/erimendez/Tecno_flow_env/assets/129424045/5e940db4-8712-42e7-92dc-0d3ddf82035e)
 
-## Sintaxsis jinja utilizada para la creacion de estetica del proyecto
-###  Sintaxsis usada para la carga de la pagina base y en el resto de las paginas .html para la carga correcta de los estilos correspondientes
+## Sintaxis jinja utilizada para la creacion de estetica del proyecto
+###  Sintaxis usada para la carga de la pagina base y en el resto de las paginas .html para la carga correcta de los estilos correspondientes
 ```
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
 {% endblock %}
 ```
-### Sintaxsis usada para vincular imagenes 
+### Sintaxis usada para vincular imagenes 
 ```
 "{% static '/media/img/tablet.jpg' %}"
 ```
-### Sintaxsis usada para enrutar los enlaces a las distintas paginas
+### Sintaxis usada para enrutar los enlaces a las distintas paginas
 ```
 "{% url 'tablets_page' %}"
 ```
-### Sintaxsis usada para la carga de Scripts
+### Sintaxis usada para la carga de Scripts
 ```
 "{% static '/js/script.js' %}"
 ```
