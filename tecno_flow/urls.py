@@ -39,7 +39,6 @@ urlpatterns = [
     path("productosmoto",ProductosmotoPage.as_view(), name = "productosmoto_page" ),
     path("productossamsung",ProductossamsungPage.as_view(), name = "productossamsung_page" ),
     path("listadoSucursales",ListadosucursalesPage.as_view(), name = "listadosucursales_page" ),
-   
 ]
 
 

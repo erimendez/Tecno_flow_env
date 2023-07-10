@@ -672,6 +672,87 @@ background-color: #3b5999;
 /* Fin del footer--------------- */
 /*--------------------------------*/
 
+/*--------------------------------*/
+/* estilo al crud--------------- */
+/*--------------------------------*/
+
+.container .cotiza_celu {
+  border-radius: 10px;
+  border: 2px solid #ccc;
+  padding: 20px;
+  margin: 20px;
+  max-width: 600px;
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0 0 0.2em rgba(0, 0, 0, 0.2);
+  
+  
+}
+
+.container .cotiza_celu h1, .cotiza_celu h2 {
+  margin: 10px 0;
+  font-size: 25px;
+}
+
+.container .cotiza_celu form {
+  margin-bottom: 10px;
+}
+
+.container .cotiza_celu form p {
+  margin: 5px 0;
+  font-weight: bold
+
+}
+
+.container .cotiza_celu input[type="submit"] {
+  background-color: #0074c7;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin: 10px 5px;
+  cursor: pointer;
+}
+
+.container .cotiza_celu a {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 25px;
+}
+
+.container .cotiza_celu table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.container .cotiza_celu td {
+
+  border: 1px solid black;
+  padding: 8px;
+  text-align: center;
+}
+
+.container .cotiza_celu th{
+  border: 1px solid black;
+  padding: 8px;
+  text-align: center;
+}
+
+.container .cotiza_celu tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.container .cotiza_celu tr:hover {
+  background-color: #e2e2e2;
+}
+
+/*---------------------------------------*/
+/* del del estilo al crud--------------- */
+/*---------------------------------------*/
+
+
+
+
+
+
 
 /*-----------------------------------*/
 /* Media queries para responsividad de

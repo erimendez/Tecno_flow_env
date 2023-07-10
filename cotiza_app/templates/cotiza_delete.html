@@ -4,7 +4,37 @@
 <main>
     <div class="container">
     <div class="cotiza_celu">
-        <h1>Estas seguro de borrar esta reparacion?</h1>
+        <table>
+            <tr>
+              <th colspan="2"><h1>Estás seguro de borrar esta reparación?</h1></th>
+            </tr>
+            <tr>
+              <td><h2>Marca:</h2></td>
+              <td><h2>{{ cotizacion.marca }}</h2></td>
+            </tr>
+            <tr>
+              <td><h2>Modelo:</h2></td>
+              <td><h2>{{ cotizacion.modelo }}</h2></td>
+            </tr>
+            <tr>
+              <td><h2>Descripción de la falla:</h2></td>
+              <td><h2>{{ cotizacion.descrip_falla }}</h2></td>
+            </tr>
+            <tr>
+              <td><h2>Fecha:</h2></td>
+              <td><h2>{{ cotizacion.fecha }}</h2></td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <form method="post">
+                  {% csrf_token %}
+                  <div>{{ form.as_p }}</div>
+                  <input type="submit" value="{{ tipo }}" />
+                </form>
+              </td>
+            </tr>
+          </table>
+        <!-- <h1>Estas seguro de borrar esta reparacion?</h1>
         <h2>{{cotizacion.marca}}</h2>
         <h2>{{cotizacion.modelo}}</h2>
         <h2>{{cotizacion.descrip_falla}}</h2>
@@ -13,7 +43,7 @@
             {% csrf_token %}
             <div>{{form.as_p}}</div>
             <input type="submit" value="{{ tipo }}" />
-        </form>
+        </form> -->
 
         <a href="{% url 'cotiza:all' %}">Cancelar</a>
     </div>
