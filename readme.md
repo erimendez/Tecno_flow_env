@@ -1,6 +1,7 @@
 # Documentacion del Sitio Web "Tecno Flow" #
 
 ## Integracion del Proyecto Inicial a Django y su deploy en Pythonanywhere
+![image](https://github.com/erimendez/Tecno_flow_env/assets/129424045/c52c94ba-8341-480e-83cd-5209f218402e)
 
 ## Requerimientos:
 
@@ -117,7 +118,7 @@ Cuenta con varias paginas con diversos productos (celulares, notebooks, tablets,
 - *productossamsung.hmtl*: Página del producto celular.
 - *productosmoto.hmtl*: Página del producto celular.
 
-#Carpeta static/*: contiene los arhivoc
+#Carpeta static/*: contiene los arhivos
 
 - *css/*: Carpeta que contiene los estilos del sitio web.
 
@@ -175,16 +176,13 @@ Este archivo contiene un CRUD sobre las reparaciones solicitadas.
 - *style.css*: Contiene los estilos generales del sitio web.
 - *pf.css*: Contiene los estilos específicos para la página `preg_Frec.html`.
 - *style_contacto.css*: Contiene los estilos específicos para la página `contacto.html`.
-- *productos.css*: Contiene los estilos específicos para la páginas `impresoras.html`, `monitores.html`,`note.html`, `productos.html`, `tablets.html`.
+- *productos.css*: Contiene los estilos específicos para la páginas `impresoras.html`, `monitores.html`,`note.html`, `tablets.html`, `productossamsung.html`, `productosmoto.html`.
 - *sucursales.css*: Contiene los estilos específicos para la página `sucursales.html`.
 
 ## Carpeta Js
 - *all.min.js*: Es el archivo que contiene  el codigo javascript para visualizar los iconos la pagina especifica `sucursales.html`.
 - *contacto.js*: Es el archivo que contiene  el codigo javascript para validar el ingreso de datos de la pagina especifica `contacto.html`.
-- *nav_footer.js*:  Es el archivo que contiene  el codigo  javascript para visualizar el `<header>` y `<footer>` en todas las paginas del sitio web.
 - *script.js*:  Es el archivo que contiene  el codigo  javascript para visualizar e insertar en el DOM del "slider" del `index.html` los campos de la base de datos.
-- *seccion.js*:  Es el archivo que contiene  el codigo  javascript para visualizar un unico producto, ocultando el resto de la informacion no solicitada. 
-- *seccioncelus.js*:  Es el archivo que contiene  el codigo  javascript para visualizar un tipo de producto,y ocultando el resto de la informacion. Se puede ejecutar el mismo script sin volver a actualizar la pagina web  para poder seleccionar la informacion anteriormente oculta. 
 - *slider.js*:  Es el archivo que contiene  el codigo  javascript para controlar los botones de navegacion del "slider" de la pagina `index.html`.
 - *sucursales.js*:  Es el archivo que contiene  el codigo  javascript para visualizar e insertar en el DOM de la pagina `sucursales.html` las sucursales y localidades. Asi como tambien lo datos de la geolocalizacion de las mismas.
 
@@ -202,7 +200,8 @@ Carpeta que contiene las imagenes en formato png/jpg del sitio web.
 - *impresoras.html*: Página del producto impresora.
 - *monitores.html*: Página del producto monitor.
 - *note.html*: Página del producto notebook.
-- *productos.html*: Página del producto celular.
+- *productossamsung.html*: Página del producto celular Samsung.
+- *productossmoto.html*: Página del producto celular Motorola.
 - *sucursales.html*: Página de las sucursales del fisicas.
 - *tablets.html*: Página del producto tablet.
 - *promociones.html*: Página de medios de pago.
@@ -224,91 +223,6 @@ Carpeta que contiene las imagenes en formato png/jpg del sitio web.
 ## Compatibilidad y Requisitos
 - Navegadores compatibles: Google Chrome (última versión), Mozilla Firefox (última versión), Safari (última versión).
 
-## Informacion Anexa
-Con el fin de responder a la solicitud por el cual este proyecto a sido creado, a continuacion de manera ordenada se ira respondiendo cada punto requerido.
-
-- >Poseer al menos 4 páginas html, siendo su temática libre. En caso de ser un Sitio
-Web estilo One Page, el mismo deberá tener al menos 4 secciones.
-
--El sitio dispone de más de 4 páginas: `index.html`, `productos.html`, `sucursales.html`, `productos.html`, `note.html`, `contacto.html`, `tablets.html`, `monitores.html`, `preg_Frec.html`,`impresoras.html`,`cotizacion.html`. 
-
-- >Utilizar etiquetas semánticas para estructurar el sitio.
-
-- Se utilizo etiquetas semanticas con el proposito que la lectura del mismo sea lo mas significativa posible tanto para los desarroladores como los navegadores que procesan y renderizan el sitio.
-
-- >Contener un formulario de contacto con validación realizada mediante Javascript.
-Opcional: el formulario podrá enviar un email utilizando algún servicio externo
-destinado para ello.
-
-- El formulario solicitado esta en la página `contacto.html` utilizando el archivo `contacto.js` para la validacion de la informacion.
-
-- >Utilizar al menos un Iframe, íconos de FontAwesome o Flaticon; y fuentes locales o
-bien de Google Fonts o similar.
-
-- El iframe se utliza en la página `listadoSucursales.html`y en la pagina `promociones.html`. 
-- Iconos de Fontwesome en el header y footer. 
-- Fuentes estan aplicadas desde el estilo en la página `style.css` utilizando google fonts, en este caso particular :[Roboto]  (https://fonts.google.com/specimen/Roboto) y [DM Sans](https://fonts.google.com/specimen/DM+Sans?query=DM)
-
-- >Tener al menos una página totalmente responsive con 3 puntos de corte para 3
-tamaños de dispositivos distintos.
-
-- La página a la cual se le aplica responsividad para mejor visualizacion del contenido del sitio web contemplando diferentes dispositivos, es la `preg_Frec.html`. Se les aplica las siguientes medias queries en el archivo `style.css` y `pf.css`; `@media screen and (max-width:479px)` , `@media screen and (min-width:480px) and (max-width:767px)` , y `@media screen and (min-width:1080px)` .
-
-- >Incorporar al menos una animación, transformación o una transición (se deberá
-indicar en qué parte del sitio web fue incorporada la animación).
-
-- La animacion esta aplicada en el haeder de las al icono "lupa", "compra" y "login" ![iconos](/static/media/img/icono.png). Ademas tambien esta aplicada en el footer en los iconos de redes sociales ![iconos](/static/media/img/icono2.png)
-  Ademas está incorporada en el navbar.
-  ![Menú animado](./static/media/img/menuanimado.jpg)
-
-- >Poseer una estructura HTML maquetada con Flexbox y/o Grid.
-
-- El sitio web esta estructurado con Flexbox
-
-- >Consumir una API Rest desde JavaScript. Deberá informar la API utilizada al
-momento de entregar el TPO.
-
-- La API solicitada es utlizada en la pagina `index.html` ![Slider con tira de imagenes](/static/media/img/api.png).Se utiliza el servicio API desde esta url Sheetdb.io (https://sheetdb.io/) el cual por permisos otorgados utiliza la planilla de calculo alojada en el drive de Google. Los elementos mostrados en el slider estan todos alojados en la planilla de calculo. El estilo aplicado esta en `style.css`; la navegacion esta controlada por el archivo `slider.js`.
-
-- >En caso de querer utilizar Bootstrap (no es obligatorio), sólo podrá hacerlo en la
-página del formulario del sitio web. No se aceptarán proyectos desarrollados
-íntegramente en algún Framework de CSS (Bootstrap, Materialize, Tailwind, etc.) o
-similar.
-
-- El recurso Boostrap es utilizado unicamente en la pagina `contacto.html`. 
-
-- >El desarrollo web deberá subirse a un servidor on-line para poder ser navegada por
-el Instructor. Ejemplo: GitHub Pages, Netlify o similares.
-
-- Este sitio esta alojado y publicado en aqui (https://erimendez.github.io/Tecno_flow_env/) utilizando servicios de GitHub. 
-
-- >Además de los aspectos técnicos mencionados anteriormente, el proyecto deberá
-contemplar aspectos de diseño los cuales también serán evaluados por el
-Instructor. Para eso se recomienda que vean el material disponible en el Aula
-Virtual. Seminario de Diseño Web: https://youtu.be/fVkGt2tYIj0. Para más
-información, ver material incluído en el Aula Virtual “Diseño” que aparecerá luego
-de la Unidad de Bootstrap. En relación al estilo de la web (look&feel) se evaluará y
-considerará: maquetación del sitio web; alineación, orden y márgenes entre los
-elementos; tipografía seleccionada acorde a la temática del proyecto; fotografía de
-calidad y optimizada para web; paleta de colores seleccionada acorde a la temática;
-logo utilizado en el sitio web; íconos utilizados y favicon.
-
-- Se trato de utilizar colores y tipografias acorde al proyecto asi como tambien la creacion desde cero del Logo, imagenes de publicidad utilizadas en el slider automatico.
-![Paleta de colores ](/static/media/img/paletadecolores.png)
-
-![Slider de publicidad](/static/media/img/publicidad.png)
-
-- El favicon esta presente en cada cabecera de las paginas web de este proyecto, facilmente identificable. 
-
-![Favicon](/static/media/img/favicon.png)
-
-## Nota Aclaratoria acerca del contenido en el sitio 
-
-- Los elementos a continuacion no poseen funcionalidad pero estan a modo de completar la visual del proyecto, todos ubicados en el header:
-    - Iconos de Usuario e Icono de Carrito de Compras.
-    - Barra de busqueda.
-    
-
 
 ## Integrantes del proyecto y detalle del trabajo realizado
 
@@ -319,7 +233,6 @@ logo utilizado en el sitio web; íconos utilizados y favicon.
 - En general el aporte de todos para buscar info, imagenes y correciones en general, tips a lo largo del proyecto.
 - Aprendimos a trabajar con GitHub en equipo.
 - Destacar la comunicación y el trabajo en equipo.
-
 
 - Erica Mendez (https://github.com/erimendez)
     * Maquetacion y creacion de la paginas `index.html`, `productos.html`, `gracias.html`, `monitores.html`, `promociones.html`, `tablets.html`, `impresoras.html`. 
