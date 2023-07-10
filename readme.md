@@ -33,7 +33,7 @@
 ```
 "{% static '/media/img/tablet.jpg' %}"
 ```
-### Sintaxis usada para enrutar los enlaces a las distintas paginas
+### Sintaxis usada para los enlaces a las distintas paginas
 ```
 "{% url 'tablets_page' %}"
 ```
