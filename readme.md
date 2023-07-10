@@ -62,9 +62,17 @@
 
 
 
-#Opcional-Recomendado: Hacer un deploy en python anywhere.
--*Posterior a la integración con Django, el agregado de un CRUD, se "subió" el proyecto a PYTHONANYWEHRE con la dirección: (https://ericamendez.pythonanywhere.com/)
--
+## Opcional-Recomendado: Hacer un deploy en python anywhere.
+### Posterior a la integración con Django, el agregado de un CRUD, se "subió" el proyecto a PYTHONANYWEHRE con la dirección: (https://ericamendez.pythonanywhere.com/)
+
+
+## API 
+
+https://ericamendez.pythonanywhere.com/cotiza/api-cotiza/
+
+![image](https://github.com/erimendez/Tecno_flow_env/assets/129424045/e62ad50c-3f70-4cc3-bdaf-978e4085e2a8)
+
+
 
 
 
