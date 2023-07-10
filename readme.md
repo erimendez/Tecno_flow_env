@@ -1,15 +1,83 @@
 # Documentacion del Sitio Web "Tecno Flow" #
 
 ## Integracion del Proyecto Inicial a Django y su deploy en Pythonanywhere
-- *Utilizar la implementación de django views para generar las rutas y colocar los endpoints necesarios para que internamente reconozca los paths  que el proyecto requiere.
-    En este punto se generaron las views, las URLs respectivas y los endpoints.
-- *Levantar los archivos estáticos que se necesitaron para la parte funcional y estética del proyecto.
-    En la carpeta "static" justamente se colocaron todos las archivos estáticos (estilos CSS, scripts JS e imagenes MEDIA), se logró la funcionalidad completa acompañada de su respectiva estética.
-- *Opcional-Recomendado: Generar un CRUD con los apps de django, e integrarlo con el front de django.
-    Se agregó la página cotización.html donde se hizo un CRUD de reparación de celulares
-- *Opcional-Recomendado: Hacer un deploy en python anywhere.
-    Posterior a la integración con Django, el agregado de un CRUD, se "subió" el proyecto a PYTHONANYWEHRE con la dirección: (https://ericamendez.pythonanywhere.com/)
+
+## Requerimientos:
+
+### Utilizar la implementación de django views para generar las rutas y colocar los endpoints necesarios para que internamente reconozca los paths  que el proyecto requiere.
+-*En este punto se generaron las views, las URLs respectivas y los endpoints.
+
+#### views.py
+![image](https://github.com/erimendez/Tecno_flow_env/assets/129424045/34b63c1c-04af-485d-ba1f-dd127dcbff43)
+![image](https://github.com/erimendez/Tecno_flow_env/assets/129424045/509e0e16-2e07-4e8f-b71a-bf129d6dad41)
+
+#### urls.py
+![image](https://github.com/erimendez/Tecno_flow_env/assets/129424045/daa86c8a-0814-4aff-888c-fcd49bdd90ed)
+  
+### Levantar los archivos estáticos que se necesitaron para la parte funcional y estética del proyecto.
+-*En la carpeta "static" justamente se colocaron todos las archivos estáticos (estilos CSS, scripts JS e imagenes MEDIA), se logró la funcionalidad completa acompañada de su respectiva estética.
+
+#### static
+![image](https://github.com/erimendez/Tecno_flow_env/assets/129424045/5e940db4-8712-42e7-92dc-0d3ddf82035e)
+
+## Sintaxsis jinja utilizada para la creacion de estetica del proyecto
+###  Sintaxsis usada para la carga de la pagina base y en el resto de las paginas .html para la carga correcta de los estilos correspondientes
+```
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+{% endblock %}
+```
+### Sintaxsis usada para vincular imagenes 
+```
+"{% static '/media/img/tablet.jpg' %}"
+```
+### Sintaxsis usada para enrutar los enlaces a las distintas paginas
+```
+"{% url 'tablets_page' %}"
+```
+### Sintaxsis usada para la carga de Scripts
+```
+"{% static '/js/script.js' %}"
+```
+
+##Opcional-Recomendado: Generar un CRUD con los apps de django, e integrarlo con el front de django.
+### Se creo las paginas para el CRUD
+![image](https://github.com/erimendez/Tecno_flow_env/assets/129424045/26eb5459-6ec8-4a71-8017-c2a75550104d)
+### Urls
+![image](https://github.com/erimendez/Tecno_flow_env/assets/129424045/e85f1169-a47e-45e6-8b78-04ebd872d470)
+### Views
+![image](https://github.com/erimendez/Tecno_flow_env/assets/129424045/a4c14b52-dde4-4316-a00c-b249bfcc9cf6)
+
+### Se agregó la página `cotización.html` donde se hizo un CRUD de reparación de celulares.
+
+![image](https://github.com/erimendez/Tecno_flow_env/assets/129424045/61dd2824-7ab4-48b4-b4af-abb8a3fa445d)
+
+
+
+
+
+
+
+
+
+
+#Opcional-Recomendado: Hacer un deploy en python anywhere.
+-*Posterior a la integración con Django, el agregado de un CRUD, se "subió" el proyecto a PYTHONANYWEHRE con la dirección: (https://ericamendez.pythonanywhere.com/)
 -
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## Descripcion
 Tecno Flow es un sitio dedicado a la venta de productos tecnologicos tanto para uso hogareño como de oficina.
