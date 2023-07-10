@@ -112,7 +112,7 @@ Cuenta con varias paginas con diversos productos (celulares, notebooks, tablets,
 -*Carpeta que contiene las vistas( views.py), las urls(urls.py) y las configuraciones globales (settings.py)
 
 #Carpeta cotiza_app
--*Carpeta que contiene lo
+-*Carpeta que contiene los archivos necesario para la creacion de CRUD, configuracion de rutas, etc.
 
 #Carpeta templates/Bloque
 
