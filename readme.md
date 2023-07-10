@@ -91,6 +91,12 @@ https://ericamendez.pythonanywhere.com/cotiza/api-cotiza/
 
 
 
+
+## Panel de control de Django
+
+![image](https://github.com/erimendez/Tecno_flow_env/assets/129424045/ccdbcd16-9971-4371-a150-3b803528a2a2)
+
+
 ## Descripcion
 Tecno Flow es un sitio dedicado a la venta de productos tecnologicos tanto para uso hogareño como de oficina.
 Cuenta con varias paginas con diversos productos (celulares, notebooks, tablets, monitores e impresoras) y sus descripciones, ademas de un formulario de consulta.
